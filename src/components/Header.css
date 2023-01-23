@@ -1,0 +1,43 @@
+@font-face {
+  font-family: VAGRounded;
+  src: url("../utils/fonts/VAG\ Rounded\ Regular.ttf");
+}
+
+
+header {
+  border-bottom: 2px #068beb solid;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  font-family: VAGRounded;
+  margin: 15px;
+}
+
+#h1-container {
+  max-width: 170px;
+  margin: auto;
+  padding: none;
+}
+
+#reddit {
+  color: #0471be;
+  border-left: 2px #0c84da solid;
+  border-top: 2px #0471be solid;
+  border-bottom: 2px #068beb solid;
+  background-color: white;
+  padding: 0px 3px 0px 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#lite {
+  color: white;
+  background: linear-gradient(#0471be, #068beb);
+  padding: 2px 5px 2px 3px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: 100
+}
+
