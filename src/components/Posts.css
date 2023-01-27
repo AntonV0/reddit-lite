@@ -1,0 +1,72 @@
+h2 {
+  padding-bottom: 15px;
+}
+
+.postsContainer {
+  border-top: 2px solid #0471be;
+  border-left: 2px solid #0471be;
+  border-right: 2px solid #0471be;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 30px;
+  background-color: #ebf3f8;
+  height: auto;
+  width: 95vw;
+  margin: auto;
+  box-shadow: #0471be 1px 5px 15px;
+}
+
+.posts {
+  /* All browsers excluding Firefox */
+  display: column;
+  columns: 4;
+  gap: 0px;
+}
+
+/* Stop posts overflowing into the next column */
+.posts > * {
+  break-inside: avoid;
+  /* Check margin */
+  /* margin-bottom: 1em; */
+}
+
+.loadMoreButtonContainer {
+  text-align: center;
+}
+
+.loadMoreButton {
+  width: 95vw;
+  box-shadow: #0471be 1px 5px 15px;
+  margin: 0 auto 50px;
+}
+
+/* CSS masonry layout only supported in Firefox */
+@supports (grid-template-rows: masonry) {
+  .posts {
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: masonry;
+    /* align-tracks: stretch; */
+  }
+}
+
+/* 3 column layout */
+@media (max-width: 1960px) {
+  .posts {
+    columns: 3;
+  }
+}
+
+/* 2 column layout */
+@media (max-width: 1500px) {
+  .posts {
+    columns: 2;
+  }
+}
+
+/* 1 column layout */
+@media (max-width: 1050px) {
+  .posts {
+    columns: 1;
+  }
+}

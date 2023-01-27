@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import SearchForm from './components/SearchForm';
+import Posts from './components/Posts';
 import Footer from './components/Footer';
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <div>
       <Header />
       <SearchForm />
-      {/* <Posts /> */}
+      <Posts />
       <Footer />
     </div>
   );
