@@ -1,15 +1,19 @@
+/* Search Form */
 .searchForm {
   width: 70vw;
   margin: 50px auto 0;
   padding: 30px 30px 0;
+  background-color: #ebf3f8;
   border-top: 2px solid #0c84da;
   border-left: 2px solid #0c84da;
   border-right: 2px solid #0c84da;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   box-shadow: #0471be 1px 5px 15px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
+/* Searchbar */
 #searchbar {
   font-size: 18px;
   width: 100%;
@@ -18,13 +22,15 @@
   border-radius: 5px;
 }
 
+/* Sort by Relevance/Latest */
 .sortBy {
   padding: 10px 0 5px 0;
 }
 
-/* Vertical alignment for radio buttons */
 input[type="radio"] {
   margin-top: -3px;
+  margin-right: 5px;
+  /* Vertical alignment for radio buttons */
   vertical-align: middle;
 }
 
@@ -36,6 +42,7 @@ input[type="radio"] {
   margin-left: 15px;
 }
 
+/* Number of posts displayed */
 .numberOfPosts {
   padding: 0px 0 30px 0;
 }
@@ -46,14 +53,14 @@ input[type="radio"] {
   margin-left: 5px;
 }
 
+/* Search Button */
 .searchButtonContainer {
   text-align: center;
 }
 
 .searchButton {
   font-size: 18px;
-  /* Add searchForm padding to width */
-  width: calc(70vw + 64px);
+  width: 70vw;
   background: linear-gradient(#0471be, #068beb);
   color: white;
   height: 40px;
