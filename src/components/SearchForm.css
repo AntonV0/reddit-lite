@@ -1,56 +1,56 @@
 /* Search Form */
 .searchForm {
-  width: 70vw;
-  margin: 50px auto 0;
-  padding: 30px 30px 0;
+  width: 70%;
+  margin: 5rem auto 0;
+  padding: 3rem 3rem 0;
   background-color: #ebf3f8;
-  border-top: 2px solid #0c84da;
-  border-left: 2px solid #0c84da;
-  border-right: 2px solid #0c84da;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  box-shadow: #0471be 1px 5px 15px;
+  border-top: .2rem solid #0c84da;
+  border-left: .2rem solid #0c84da;
+  border-right: .2rem solid #0c84da;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  box-shadow: #0471be .1rem .5rem 1.5rem;
   font-family: 'Noto Sans', sans-serif;
 }
 
 /* Searchbar */
 #searchbar {
-  font-size: 18px;
+  font-size: 1.8rem;
   width: 100%;
-  padding: 15px;
-  border: 1px solid #068beb;
-  border-radius: 5px;
+  padding: 1.5rem;
+  border: .1rem solid #068beb;
+  border-radius: .5rem;
 }
 
 /* Sort by Relevance/Latest */
 .sortBy {
-  padding: 10px 0 5px 0;
+  padding: 1rem 0 .5rem 0;
 }
 
 input[type="radio"] {
-  margin-top: -3px;
-  margin-right: 5px;
+  margin-top: -.3rem;
+  margin-right: .5rem;
   /* Vertical alignment for radio buttons */
   vertical-align: middle;
 }
 
 #relevance {
-  margin-left: 15px;
+  margin-left: 1.5rem;
 }
 
 #latest {
-  margin-left: 15px;
+  margin-left: 1.5rem;
 }
 
 /* Number of posts displayed */
 .numberOfPosts {
-  padding: 0px 0 30px 0;
+  padding: 0 0 3rem 0;
 }
 
 .selectPostNumber {
   text-align: center;
-  width: 60px;
-  margin-left: 5px;
+  width: 6rem;
+  margin-left: .5rem;
 }
 
 /* Search Button */
@@ -59,16 +59,16 @@ input[type="radio"] {
 }
 
 .searchButton {
-  font-size: 18px;
-  width: 70vw;
+  font-size: 1.8rem;
+  width: 70%;
   background: linear-gradient(#0471be, #068beb);
   color: white;
-  height: 40px;
-  margin-bottom: 50px;
-  border: 2px solid #0471be;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  box-shadow: #0471be 1px 6px 15px;
+  height: 4rem;
+  margin-bottom: 5rem;
+  border: .2rem solid #0471be;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: #0471be .1rem .6rem 1.5rem;
   cursor: pointer;
 }
 

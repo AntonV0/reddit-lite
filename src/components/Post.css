@@ -1,9 +1,8 @@
 /* General post styles */
 .fullPost {
-  border: 2px solid #0c84da;
-  border-radius: 5px;
-  /* max-width: calc(25% - 10px); */
-  margin: 0 10px 20px 10px;
+  border: .2rem solid #0c84da;
+  border-radius: .5rem;
+  margin: 0 1rem 2rem 1rem;
   background-color: white;
 }
 
@@ -13,7 +12,7 @@
   grid-template-columns: min-content min-content 1fr min-content;
   grid-gap: 0;
   place-items: center;
-  border-bottom: 2px solid #068beb;
+  border-bottom: .2rem solid #068beb;
   background-color: #cbefff;
 }
 
@@ -21,19 +20,19 @@
 .postScore {
   margin: 0;
   font-weight: bold;
-  margin-left: -3px;
+  margin-left: -.3rem;
 }
 
 .arrowIcon {
-  width: 35px;
-  margin-top: 3px;
+  width: 3.5rem;
+  margin-top: .3rem;
 }
 
 /* Subreddit */
 .postSubredditButton {
   background: linear-gradient(#068beb, #0a6cb3);
-  border-radius: 20px;
-  margin-left: 10px;
+  border-radius: 2rem;
+  margin-left: 1rem;
   border: none;
   font-family: 'IBM Plex Sans', sans-serif;
 }
@@ -41,62 +40,63 @@
 .postSubreddit {
   font-weight: bold;
   color: white;
-  margin: 3px 10px;
+  margin: .3rem 1rem;
 }
 
 /* Username */
 .postUsername {
   color: #464646;
-  margin: 0 10px;
+  margin: 0 1rem;
   justify-self: right;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .usernameButton {
   border: none;
   color: #464646;
   background-color: #cbefff;
-  margin-left: 1px;
+  margin-left: .1rem;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 /* Post Text */
 .postText {
   font-family: 'Noto Sans', sans-serif;
-  margin: 10px 30px;
+  margin: 1rem 3rem;
 }
 
 /* Post Image/Video */
 .postImage {
   width: 100%;
-  max-width: calc(100% - 40px);
-  margin: 0 20px;
-  border: 1px solid red;
+  max-width: calc(100% - 4rem);
+  margin: 0 2rem;
+  border: .1rem solid red;
 }
 
 .postVideo {
   width: 100%;
-  max-width: calc(100% - 40px);
-  margin: 0 20px;
-  border: 1px solid red;
+  max-width: calc(100% - 4rem);
+  margin: 0 2rem;
+  border: .1rem solid red;
 }
 
 /* Comments */
 .commentsButton {
+  font-size: 1.4rem;
   background-color: white;
   color: #333333;
   border: none;
-  margin: 10px;
-  padding: 5px;
-  border-radius: 10px;
+  margin: 1rem;
+  padding: .5rem;
+  border-radius: 1rem;
 }
 
 .commentsIcon {
-  width: 25px;
-  height: 20px;
-  margin-right: 10px;
+  width: 2.5rem;
+  height: 2rem;
+  margin-right: 1rem;
 }
 
 .commentsText {
@@ -110,12 +110,14 @@
 
 /* View on Reddit button */
 .redditButton {
-  padding: 5px 30px;
+  font-size: 1.4rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bold;
+  padding: .5rem 3rem;
   border: none;
   color: white;
   background-color: #ff2b00;
   float: right;
-  margin: 10px 20px 10px 10px;
-  font-family: 'IBM Plex Sans', sans-serif;
-  border-radius: 10px;
+  margin: 1rem 2rem 1rem 1rem;
+  border-radius: 1rem;
 }
