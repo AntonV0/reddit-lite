@@ -1,0 +1,121 @@
+/* General post styles */
+.fullPost {
+  border: 2px solid #0c84da;
+  border-radius: 5px;
+  /* max-width: calc(25% - 10px); */
+  margin: 0 10px 20px 10px;
+  background-color: white;
+}
+
+/* Score, subreddit, and username grid */
+.postOrigin {
+  display: grid;
+  grid-template-columns: min-content min-content 1fr min-content;
+  grid-gap: 0;
+  place-items: center;
+  border-bottom: 2px solid #068beb;
+  background-color: #cbefff;
+}
+
+/* Score */
+.postScore {
+  margin: 0;
+  font-weight: bold;
+  margin-left: -3px;
+}
+
+.arrowIcon {
+  width: 35px;
+  margin-top: 3px;
+}
+
+/* Subreddit */
+.postSubredditButton {
+  background: linear-gradient(#068beb, #0a6cb3);
+  border-radius: 20px;
+  margin-left: 10px;
+  border: none;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.postSubreddit {
+  font-weight: bold;
+  color: white;
+  margin: 3px 10px;
+}
+
+/* Username */
+.postUsername {
+  color: #464646;
+  margin: 0 10px;
+  justify-self: right;
+  font-size: 12px;
+}
+
+.usernameButton {
+  border: none;
+  color: #464646;
+  background-color: #cbefff;
+  margin-left: 1px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Post Text */
+.postText {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 10px 30px;
+}
+
+/* Post Image/Video */
+.postImage {
+  width: 100%;
+  max-width: calc(100% - 40px);
+  margin: 0 20px;
+  border: 1px solid red;
+}
+
+.postVideo {
+  width: 100%;
+  max-width: calc(100% - 40px);
+  margin: 0 20px;
+  border: 1px solid red;
+}
+
+/* Comments */
+.commentsButton {
+  background-color: white;
+  color: #333333;
+  border: none;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.commentsIcon {
+  width: 25px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.commentsText {
+  font-weight: bold;
+}
+
+.commentsButton > .commentsIcon,
+.commentsButton > .commentsText {
+  vertical-align: middle;
+}
+
+/* View on Reddit button */
+.redditButton {
+  padding: 5px 30px;
+  border: none;
+  color: white;
+  background-color: #ff2b00;
+  float: right;
+  margin: 10px 20px 10px 10px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  border-radius: 10px;
+}
