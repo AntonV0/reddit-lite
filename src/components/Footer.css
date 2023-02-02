@@ -1,7 +1,6 @@
 /* Footer */
 footer {
-  background-color: #0471be;
-  border-top: .2rem solid #035a97;
+  background-color: #00192b;
   color: white;
   display: flex;
   padding: 2rem;
@@ -75,4 +74,11 @@ p {
 
 #githubProfile {
   color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 75rem) {
+  .alignRightFooterElements {
+    display: none;
+  }
 }

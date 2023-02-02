@@ -1,7 +1,9 @@
 /* Search Form */
 .searchForm {
   width: 70%;
-  margin: 5rem auto 0;
+  max-width: 120rem;
+  min-width: 31rem;
+  margin: 2rem auto 0;
   padding: 3rem 3rem 0;
   background-color: #ebf3f8;
   border-top: .2rem solid #0c84da;
@@ -10,7 +12,6 @@
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   box-shadow: #0471be .1rem .5rem 1.5rem;
-  font-family: 'Noto Sans', sans-serif;
 }
 
 /* Searchbar */
@@ -48,6 +49,7 @@ input[type="radio"] {
 }
 
 .selectPostNumber {
+  font-family: 'IBM Plex Sans', sans-serif;
   text-align: center;
   width: 6rem;
   margin-left: .5rem;
@@ -61,6 +63,8 @@ input[type="radio"] {
 .searchButton {
   font-size: 1.8rem;
   width: 70%;
+  max-width: 120rem;
+  min-width: 31rem;
   background: linear-gradient(#0471be, #068beb);
   color: white;
   height: 4rem;
@@ -70,6 +74,8 @@ input[type="radio"] {
   border-bottom-right-radius: 1rem;
   box-shadow: #0471be .1rem .6rem 1.5rem;
   cursor: pointer;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bold;
 }
 
 .searchButton:hover {
@@ -80,4 +86,19 @@ input[type="radio"] {
 
 .searchButton:active {
   background: linear-gradient(#ffffff, #93c6eb);
+}
+
+@media (max-width: 65.625rem) {
+  .searchForm {
+    width: 90%;
+  }
+  .searchButton {
+    width: 90%;
+  }
+}
+
+@media (max-width: 38.75rem) {
+  .searchButton {
+    margin-bottom: 3rem;
+  }
 }

@@ -11,7 +11,7 @@ export default function Posts() {
   return (
     <div>
       <div class='postsContainer'>
-        <h2>TOP REDDIT POSTS TODAY</h2>
+        <h2>Today's Top Reddit Posts</h2>
         <div class='posts'>
           <MockPost1 />
           <MockPost2 />

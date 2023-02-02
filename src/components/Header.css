@@ -3,15 +3,12 @@
   src: url('../utils/fonts/VAG\ Rounded\ Regular.ttf');
 }
 
-header {
-  border-bottom: .2rem #068beb solid;
-}
-
 header h1 {
   text-align: center;
   margin: 0;
   font-family: VAGRounded;
   margin: 1.5rem;
+  cursor: default;
 }
 
 #h1-container {
@@ -22,9 +19,9 @@ header h1 {
 
 #reddit {
   color: #0471be;
-  border-left: .2rem #0c84da solid;
-  border-top: .2rem #0471be solid;
-  border-bottom: .2rem #068beb solid;
+  border-left: .3rem #0c84da solid;
+  border-top: .3rem #0471be solid;
+  border-bottom: .3rem #068beb solid;
   background-color: white;
   padding: 0 .3rem 0 .5rem;
   border-top-left-radius: 1rem;
@@ -33,8 +30,11 @@ header h1 {
 
 #lite {
   color: white;
+  border-right: .3rem #0c84da solid;
+  border-top: .3rem #0471be solid;
+  border-bottom: .3rem #068beb solid;
   background: linear-gradient(#0471be, #068beb);
-  padding: .2rem .5rem .2rem .3rem;
+  padding: 0 .5rem 0 .3rem;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   font-weight: 100;

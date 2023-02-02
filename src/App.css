@@ -26,3 +26,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Responsive font-size */
+@media (max-width: 122.5rem) {
+  html {
+    font-size: 60%;
+  }
+}
+
+
+@media (max-width: 93.75rem) {
+  html {
+    font-size: 55%;
+  }
+}
+
+
+@media (max-width: 58rem) {
+  html {
+    font-size: 50%;
+  }
+}

@@ -13,7 +13,7 @@ export default function SearchForm() {
           <label for='latest'>Latest</label>
         </div>
         <div class='numberOfPosts'>
-          <label for='numberOfPosts'>Number of posts displayed: </label>
+          <label for='numberOfPosts'>Posts displayed: </label>
           <select class='selectPostNumber'>
             <option label='25' value='25'></option>
             <option label='50' value='50'></option>

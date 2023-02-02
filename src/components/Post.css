@@ -1,5 +1,6 @@
 /* General post styles */
 .fullPost {
+  min-width: 30rem;
   border: .2rem solid #0c84da;
   border-radius: .5rem;
   margin: 0 1rem 2rem 1rem;
@@ -21,6 +22,7 @@
   margin: 0;
   font-weight: bold;
   margin-left: -.3rem;
+  cursor: default;
 }
 
 .arrowIcon {
@@ -35,6 +37,12 @@
   margin-left: 1rem;
   border: none;
   font-family: 'IBM Plex Sans', sans-serif;
+  cursor: pointer;
+}
+
+.postSubredditButton:hover {
+  scale: 1.1;
+  transition: .3s all;
 }
 
 .postSubreddit {
@@ -43,12 +51,17 @@
   margin: .3rem 1rem;
 }
 
+.subredditName:hover {
+  text-decoration: underline;
+}
+
 /* Username */
 .postUsername {
   color: #464646;
   margin: 0 1rem;
   justify-self: right;
   font-size: 1.2rem;
+  cursor: default;
 }
 
 .usernameButton {
@@ -59,6 +72,11 @@
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.usernameButton:hover {
+  text-decoration: underline;
 }
 
 /* Post Text */
@@ -72,25 +90,30 @@
   width: 100%;
   max-width: calc(100% - 4rem);
   margin: 0 2rem;
-  border: .1rem solid red;
+  border: .1rem solid #068beb;
 }
 
 .postVideo {
   width: 100%;
   max-width: calc(100% - 4rem);
   margin: 0 2rem;
-  border: .1rem solid red;
+  border: .1rem solid #068beb;
 }
 
 /* Comments */
 .commentsButton {
   font-size: 1.4rem;
   background-color: white;
-  color: #333333;
+  color: #555555;
   border: none;
   margin: 1rem;
   padding: .5rem;
   border-radius: 1rem;
+  cursor: pointer;
+}
+
+.commentsButton:hover {
+  color: black;
 }
 
 .commentsIcon {
@@ -120,4 +143,65 @@
   float: right;
   margin: 1rem 2rem 1rem 1rem;
   border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: #ff2b00 .3rem .2rem 1rem;
+}
+
+.redditButton:hover {
+  color: #ff2b00;
+  background-color: white;
+  border: .3rem solid #ff2b00;
+  padding: .3rem 2.75rem;
+}
+
+.redditButton:active {
+  box-shadow: none;
+  transform: translateY(.2rem);
+}
+
+/* Mobile layout for .postOrigin and .commentsSection */
+@media (max-width: 27.5rem) {
+  .postOrigin {
+    grid-template-columns: min-content min-content 1fr;
+  }
+
+  .postSubredditButton {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    justify-self: right;
+    margin: .75rem .5rem .25rem 0;
+  }
+
+  .arrowIcon {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    margin-left: 1rem;
+  }
+
+  .postScore {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+  } 
+
+  .postUsername, .usernameButton {
+    font-size: 1.4rem;
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    margin: .2rem 1rem .2rem 0;
+  }
+
+  .postUsername {
+    margin: 0.25rem .5rem .5rem 0;
+  }
+
+  .usernameButton {
+    margin: auto;
+    padding-left: .3rem;
+  }
+}
+
+@media(max-width: 22.5rem) {
+  .commentsSection {
+    display: flex;
+  }
 }
