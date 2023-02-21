@@ -5,13 +5,15 @@ import Post from './Post.js';
 export default function Posts() {
 
   const [posts, setPosts] = useState([]);
-  const [subreddit, setSubreddit] = useState('all');
+  // const [subreddit, setSubreddit] = useState('all');
+  // const [time, setTime] = useState('?t=day');
+  // const [limit, setLimit] = useState('?limit=25');
 
   useEffect(() => {
     // Fetches Reddit JSON data of top posts from all subreddits
     fetch('https://www.reddit.com/r/all/.json').then(response => {
       // Checks if request has succeeded (HTTP 200 OK status)
-      if(response.status != 200) {
+      if(response.status !== 200) {
         console.log('Error: Response status is not 200.');
         return;
       }
@@ -23,7 +25,7 @@ export default function Posts() {
         }
       })
     })
-    // Currently the post data updates once on load
+    // Currently the post data updates one time on load, remove empty array to update constantly
   }, []/*, [subreddit]*/);
 
   return (
@@ -37,20 +39,28 @@ export default function Posts() {
           <span className='postTime'>All Time</span>
         </h2>
         <div className='posts'>
-
+          {/* Creates new array populated with the relevant JSON data */}
           {(posts !== null) ? posts.map((post) => 
+            // Renders 25 instances of the <Post /> component
             <Post 
+              // key={value} pairs for relevant JSON data
               key={post.data.id} 
               score={post.data.score}
               subreddit={post.data.subreddit}
               username={post.data.author}
               title={post.data.title}
-              // subtitle={post.data.} ???
-              // media={post.data.media}
-              mediaUrl={post.data.url}
+              // subtitle={post.data.?} ???
+              media={post.data.media}
+              url={post.data.url}
               isVideo={post.data.is_video}
               commentsNum={post.data.num_comments}
+              over18={post.data.over_18}
+              secureMedia={post.data.secure_media}
+              permalink={post.data.permalink}
+              postHint={post.data.post_hint}
+              thumbnail={post.data.thumbnail}
             />
+          // Dependency array returns empty string if (posts === null)
           ) : ''}
 
          

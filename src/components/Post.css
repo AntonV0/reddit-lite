@@ -79,10 +79,15 @@
   text-decoration: underline;
 }
 
+.username {
+  /* Stops line breaking hyphens */
+  white-space: nowrap;
+}
+
 /* Post Text */
 .postText {
   font-family: 'Noto Sans', sans-serif;
-  margin: 1rem 3rem;
+  margin: 2rem 3rem;
 }
 
 /* Post Image/Video */
@@ -90,14 +95,13 @@
   width: 100%;
   max-width: calc(100% - 4rem);
   margin: 0 2rem;
-  border: .1rem solid #068beb;
 }
 
 .postVideo {
   width: 100%;
   max-width: calc(100% - 4rem);
+  max-height: 80vh;
   margin: 0 2rem;
-  border: .1rem solid #068beb;
 }
 
 /* Comments */
@@ -119,7 +123,7 @@
 .commentsIcon {
   width: 2.5rem;
   height: 2rem;
-  margin-right: 1rem;
+  margin-right: .5rem;
 }
 
 .commentsText {
@@ -129,6 +133,39 @@
 .commentsButton > .commentsIcon,
 .commentsButton > .commentsText {
   vertical-align: middle;
+}
+
+/* Hide NSFW Content */
+.nsfw {
+  border: 2px solid red;
+  border-radius: .5rem;
+  font-size: 5rem;
+  color: red;
+  width: 80%;
+  padding: 5rem 0;
+  text-align: center;
+  margin: auto;
+}
+
+/* Thumbnails and external links */
+.thumbnailContainer {
+  display: inline-block;
+  width: 80%;
+  margin: 0 3rem;
+}
+
+.thumbnailImage {
+  margin-right: 1rem;
+}
+
+.thumbnailLink {
+  font-size: 1.6rem;
+  /* Wraps the external link in all browsers */
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 /* View on Reddit button */
@@ -157,6 +194,7 @@
 .redditButton:active {
   box-shadow: none;
   transform: translateY(.2rem);
+  color: #ff2b00 ;
 }
 
 /* Mobile layout for .postOrigin and .commentsSection */
