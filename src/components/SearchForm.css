@@ -97,6 +97,15 @@ input[type="radio"] {
   }
 }
 
+@media (max-width: 58rem) {
+  .searchForm {
+    width: 80%;
+  }
+  .searchButton {
+    width: 80%;
+  }
+}
+
 @media (max-width: 38.75rem) {
   .searchButton {
     margin-bottom: 3rem;

@@ -17,7 +17,11 @@ h2 {
   font-size: 2.4rem;
 }
 
-h3, p, p.span, form, button {
+h3 {
+  font-size: 2rem;
+}
+
+p, p.span, form, button {
   font-size: 1.6rem;
 }
 
