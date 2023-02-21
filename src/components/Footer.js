@@ -11,7 +11,7 @@ export default function Footer() {
           rel='noreferrer'>
             <button className='githubButton'>
               <img 
-                class='githubLogo' 
+                className='githubLogo' 
                 src={invertocatWhite} 
                 alt='GitHub logo white invertocat'
               />
