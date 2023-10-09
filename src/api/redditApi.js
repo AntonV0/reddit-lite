@@ -9,6 +9,6 @@ export const fetchTopPosts = createAsyncThunk(
       `https://www.reddit.com/r/${subreddit}/top/?t=${time}.json`
     );
     const json = await response.json();
-    return json();
+    return json;
   }
 );
