@@ -49,7 +49,7 @@ export default function Posts() {
               subreddit={post.data.subreddit}
               username={post.data.author}
               title={post.data.title}
-              // subtitle={post.data.?} ???
+              selftext={post.data.selftext}
               media={post.data.media}
               url={post.data.url}
               isVideo={post.data.is_video}
